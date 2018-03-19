@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="taha.chatapplication.taha.chatapplication.SettingaActivity">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/defaultperson" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:text="Display name"
+        android:textColor="#fff"
+        android:id="@+id/dis_name"
+        android:textSize="30sp"
+        android:layout_margin="5dp"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:lines="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dis_name"
+        android:layout_below="@+id/dis_name"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:id="@+id/status"
+        android:lines="1"
+        android:text="hi there , am using Schoolh Chat"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#ff00"
+        android:onClick="changeStatus"
+        android:padding="10dp"
+        android:text="change status"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_below="@+id/status"
+        android:layout_marginTop="23dp"
+        android:background="#ff00"
+        android:onClick="changeImage"
+        android:padding="10dp"
+        android:text="change Image"
+        android:textColor="#fff" />
+</RelativeLayout>
